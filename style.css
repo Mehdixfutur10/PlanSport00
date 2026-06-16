@@ -148,3 +148,48 @@ height:55px;
 object-fit:contain;
 margin-bottom:8px;
 }
+@keyframes logoEntrance{
+0%{
+transform:translateX(-1000px);
+}
+80%{
+transform:translateX(50px);
+}
+100%{
+transform:translateX(0);
+}
+}
+
+#playpulse{
+animation:logoEntrance 1.5s ease;
+}
+.minute{
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1;}
+50%{opacity:.4;}
+100%{opacity:1;}
+}
+.match-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px #38bdf8;
+}
+.ticker{
+white-space:nowrap;
+overflow:hidden;
+}
+
+.ticker{
+animation:scroll 25s linear infinite;
+}
+
+@keyframes scroll{
+from{
+transform:translateX(100%);
+}
+to{
+transform:translateX(-100%);
+}
+}
