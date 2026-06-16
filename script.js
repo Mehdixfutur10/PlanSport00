@@ -133,3 +133,40 @@ document.body.classList.toggle(
 );
 
 });
+matchesContainer.innerHTML += `
+<div class="match-card">
+
+<div class="league">
+🏆 ${match.league}
+</div>
+
+<div class="teams">
+
+<div class="team">
+
+<img src="${match.homeLogo}" class="team-logo">
+
+<p>${match.home}</p>
+
+</div>
+
+<div class="score">
+${match.homeScore} - ${match.awayScore}
+</div>
+
+<div class="team">
+
+<img src="${match.awayLogo}" class="team-logo">
+
+<p>${match.away}</p>
+
+</div>
+
+</div>
+
+<div class="minute">
+🔴 LIVE ${match.minute}'
+</div>
+
+</div>
+`;
